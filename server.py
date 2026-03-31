@@ -14,7 +14,7 @@ def emotionDetector():
     sadness = result['sadness']
     dominant_emotion = result['dominant_emotion']
     if dominant_emotion is None:
-        return "Invalid input ! Try again."
+        return "Invalid text! Please try again!"
     return "For the given statement, the system response is  'anger': {},  'disgust': {},  'fear': {},  'joy': {} and 'sadness': {}. The dominant emotion is {}".format(anger, disgust, fear, joy, sadness, dominant_emotion)
 
 @app.route("/")
